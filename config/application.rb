@@ -13,7 +13,6 @@ require "action_text/engine"
 require "action_view/railtie"
 require "action_cable/engine"
 # require "sprockets/railtie"
-require "rails/test_unit/railtie"
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -37,4 +36,13 @@ module App
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
   end
+end
+
+# Rspec configure
+config.generators do |g|
+  g.test_framework :rspec,
+                   view_specs: false,
+                   helper_specs: false,
+                   controller_specs: false,
+                   routing_specs: false
 end
