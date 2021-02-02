@@ -46,6 +46,8 @@ group :development do
   gem 'spring'
   # static analysis tool which checks for security vulnerabilities
   gem 'brakeman'
+  # Detect N+1(slow query)
+  gem 'bullet'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
