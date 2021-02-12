@@ -58,6 +58,9 @@ group :development do
   gem 'brakeman'
   # Detect N+1(slow query)
   gem 'bullet'
+
+  # Anotation
+  gem 'annotate'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
