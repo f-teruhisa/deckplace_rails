@@ -48,6 +48,10 @@ group :development, :test do
   # Rspec for test framework
   gem "factory_bot_rails"
   gem "rspec-rails"
+  
+  # committee
+  gem 'committee'
+  gem 'committee-rails'
 end
 
 group :development do

@@ -74,6 +74,15 @@ GEM
       uniform_notifier (~> 1.11)
     byebug (11.1.3)
     coderay (1.1.3)
+    committee (4.3.0)
+      json_schema (~> 0.14, >= 0.14.3)
+      openapi_parser (>= 0.11.1)
+      rack (>= 1.5)
+    committee-rails (0.5.1)
+      actionpack
+      activesupport
+      committee (>= 3.0.0)
+      railties
     concurrent-ruby (1.1.8)
     crass (1.0.6)
     devise (4.7.3)
@@ -103,6 +112,7 @@ GEM
     hashie (4.1.0)
     i18n (1.8.7)
       concurrent-ruby (~> 1.0)
+    json_schema (0.20.9)
     jwt (2.2.2)
     listen (3.4.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
@@ -149,6 +159,7 @@ GEM
     omniauth-oauth2 (1.7.1)
       oauth2 (~> 1.4)
       omniauth (>= 1.9, < 3)
+    openapi_parser (0.12.1)
     orm_adapter (0.5.0)
     parallel (1.20.1)
     parser (3.0.0.0)
@@ -276,6 +287,8 @@ DEPENDENCIES
   brakeman
   bullet
   byebug
+  committee
+  committee-rails
   devise
   devise-i18n
   devise-i18n-views
