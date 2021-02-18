@@ -44,7 +44,7 @@ module App
                        controller_specs: false,
                        routing_specs: false
     end
-    
+
     # User .ja default language
     config.i18n.default_locale = :ja
   end
