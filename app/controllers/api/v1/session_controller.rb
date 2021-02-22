@@ -1,7 +1,7 @@
 module Api
   module V1
     # Perform login/logout processes
-    class SessionController < Api::V1::ApplicationController
+    class SessionController < Api::ApplicationController
       def log_in
         user = User.find_for_database_authentication(email: user_params[:email])
 
