@@ -47,5 +47,11 @@ module App
 
     # User .ja default language
     config.i18n.default_locale = :ja
+
+    # Omniauth Google
+    # https://github.com/omniauth/omniauth/blob/650943c16de33c7cdf16708b74766e95ad369610/README.md#integrating-omniauth-into-your-rails-api
+    config.session_store :cookie_store, key: '_interslice_session'
+    config.middleware.use ActionDispatch::Cookies # Required for all session management
+    config.middleware.use ActionDispatch::Session::CookieStore, config.session_options
   end
 end
