@@ -28,6 +28,7 @@ gem 'rack-cors'
 gem 'devise', git: "https://github.com/heartcombo/devise"
 gem 'devise-i18n'
 gem 'devise-i18n-views'
+gem 'devise_token_auth'
 gem 'omniauth'
 gem 'omniauth-apple'
 gem 'omniauth-google-oauth2'

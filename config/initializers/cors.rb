@@ -12,9 +12,10 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
 
     # Define the requests that can be accessed
     # Can exchange session/cookie by giving credentials: true
-    resource '^/api',
+    resource '*',
              headers: :any,
              methods: [:get, :post, :put, :patch, :delete, :options, :head],
+             expose: %w[access-token expiry token-type uid client],
              credentials: true
   end
 end
